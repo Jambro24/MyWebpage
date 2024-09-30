@@ -1,0 +1,75 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Required</title>
+        <style>
+            body {
+                font-family: sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background-color: #f0f0f0;
+                text-align: center;
+            }
+
+            #code-form {
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            #code-form h2 {
+                margin-bottom: 10px;
+            }
+
+            #code-form input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            #code-form button {
+                padding: 10px 20px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="code-form">
+            <h2>Enter the Access Code</h2>
+            <input type="text" id="access-code" placeholder="Enter code">
+            <button onclick="checkCode()">Submit</button>
+            <p id="message"></p>
+        </div>
+
+        <script>
+            const correctCode = "ILOVEDODGERS"; // Replace with your actual access code
+
+            function checkCode() {
+                const inputCode = document.getElementById('access-code').value;
+                const message = document.getElementById('message');
+
+                if (inputCode === correctCode) {
+                    // Redirect to your website if the code is correct
+                    window.location.href = "https://jambro24.github.io/MyWebpage/"; 
+                } else {
+                    message.textContent = "Incorrect code. Please try again.";
+                    message.style.color = 'red';
+                }
+            }
+        </script>
+
+    </body>
+    </html>
