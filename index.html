@@ -3,115 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaimito's About Me</title>
+    <title>Jaimito's Unhealthy Obsessions</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #003366;
-        }
-        header {
-            background-color: #00FF00;
-            color: white;
-            padding: 1em;
+            background-color: #e0f7fa;
+            color: #333;
             text-align: center;
+            padding: 50px;
         }
-        nav {
-            margin: 0;
-            padding: 0;
-            background-color: #191970;
+        h1 {
+            color: #32CD32;
         }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
+        .comparison {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
         }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: inline-block;
-        }
-        nav ul li a:hover {
-            background-color: #00FF00;
-        }
-        .container {
+        .card {
+            background-color: #fff;
+            border: 2px solid #32CD32;
+            border-radius: 10px;
             padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
         }
-        footer {
-            background-color:#00FF00;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+        h2 {
+            color: #32CD32;
+        }
+        a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
     </style>
-    <header>
-        <h1>Jaimito's Webpage</h1>
-    </header>
-    <nav>
-        <ul>
+</head>
+<body>
 
+    <h1>Jaimito's Unhealthy Obsessions</h1>
 
-    </nav>
-    <div class="container">
-        <h2>About Jaimito</h2>
-        <p>My name is Jaime Martinez Jr, or Jaimito for short. I attend Shafter Highschool, since I live in Shafter. I love baseball, and look forward to continue playing in the future. My favorite team is the Los Angeles Dodgers, and I've always been a fan my whole life. My favorite player of all time is Ken Griffey Jr. However, currently my favorite player who is actively playing is Shohei Ohtani. I've been a fan of him before he even came to the Dodgers, and played for that horrible team, the Angels(It's just a joke Mr. Lewis).  </p>
+    <div class="comparison">
+        <div class="card">
+            <h2>Unhealthy Obsession</h2>
+            <ul>
+                <li>I'm extremely Obsessed with Green</li>
+                <li>I'm obsessed with Wordle, and everyday even on the weekends, I would complete my wordle of the day.</li>
+                <li>I'm really obsessed with the fast food location called Canes. I love their sauce.</li>
+                <li>Another unhealthy obsession is going to the Gym everyday. It's really healthy to stay in shape, however I go 6 times a week. I clearly have an unhealthy obsession.</li>
+            </ul>
+        </div>
 
-        <h2>My Life</h2>
-        <p>Each day, I start with a morning gym session before heading to school, where I strive to excel academically and lay the groundwork for strong college offers. My dedication to my studies is matched by my commitment to baseball practice in the afternoon. Balancing rigorous workouts, school responsibilities, and sports, I work hard to maintain a high standard in everything I do, constantly pushing myself to achieve both my academic and athletic goals.</p>
-<img src="LA_Dodgers.svg.png" 
-    style="width: 200px;height: 200px;"> 
-<img src="Shohei Ohtani.jpeg">
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <title>Valley Champ</title>
-          <style>
-            #popup {
-              display: none;
-              position: fixed;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              background-color: white;
-              padding: 20px;
-              border: 1px solid black;
-              z-index: 1000; /* Ensure it appears on top */
+        <div class="card">
+            <h2>Healthy Attachment</h2>
+            <ul>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Jaimito's Unhealthy Obsession</title>
+                </head>
+                <body>
+
+                  <img src="Canes.png" alt="Canes Logo" width="200" height="100"> 
+
+                <img src="gym.jpeg" alt="Gym Image" width="200" height="100"> 
+
+                </body>
+                </html>
+            </ul>
+        </div>
+    </div>
+
+    <p><a href="#resources"></a></p>
+
+    <div id="resources" style="margin-top: 40px;">
+        
+        </ul>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .game {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .row {
+            display: flex;
+            margin: 5px;
+        }
+        .cell {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ccc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        .correct {
+            background-color: green;
+            color: white;
+        }
+        .present {
+            background-color: yellow;
+            color: black;
+        }
+        .absent {
+            background-color: gray;
+            color: white;
+        }
+        input {
+            width: 200px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game">
+        <h1>Wordle</h1>
+        <div id="grid"></div>
+        <input type="text" id="guessInput" maxlength="5" placeholder="Enter your guess" />
+        <button id="submitGuess">Submit Guess</button>
+        <div id="message"></div>
+    </div>
+
+    <script>
+        const targetWord = "ready";
+        const maxAttempts = 6;
+        let currentAttempt = 0;
+
+        function createGrid() {
+            const grid = document.getElementById("grid");
+            for (let i = 0; i < maxAttempts; i++) {
+                const row = document.createElement("div");
+                row.className = "row";
+                for (let j = 0; j < 5; j++) {
+                    const cell = document.createElement("div");
+                    cell.className = "cell";
+                    row.appendChild(cell);
+                }
+                grid.appendChild(row);
             }
-          </style>
-        </head>
-        <body>
+        }
 
-          <h1>Wake up, Baseball, Sleep
-          
-          Road to 50/50, SHOHEI</h1>
+        function displayGuess(guess) {
+            const cells = document.querySelectorAll(".row:nth-child(" + (currentAttempt + 1) + ") .cell");
+            for (let i = 0; i < 5; i++) {
+                cells[i].textContent = guess[i];
+                if (guess[i] === targetWord[i]) {
+                    cells[i].classList.add("correct");
+                } else if (targetWord.includes(guess[i])) {
+                    cells[i].classList.add("present");
+                } else {
+                    cells[i].classList.add("absent");
+                }
+            }
+        }
 
-          <div id="popup">
-            <h2>Valley Champ</h2>
-            <p>First Baseball CIF Champs in 96 years</p>
-            <button id="closePopup">Close</button>
-          </div>
+        document.getElementById("submitGuess").addEventListener("click", function () {
+            const guessInput = document.getElementById("guessInput");
+            const guess = guessInput.value.toLowerCase();
+            guessInput.value = "";
 
-          <script>
-            setTimeout(function() {
-              document.getElementById("popup").style.display = "block";
-            }, 5000); // Show popup after 5 seconds
+            if (guess.length !== 5) {
+                alert("Please enter a 5-letter word.");
+                return;
+            }
 
-            document.getElementById("closePopup").addEventListener("click", function() {
-              document.getElementById("popup").style.display = "none";
-            });
-          </script>
+            displayGuess(guess);
+            currentAttempt++;
 
-        </body>
-        </html>
-        <iframe width="713" height="401" src="https://www.youtube.com/embed/nnWJ1-pSO9k" title="ALL 30 Shohei Ohtani home runs so far this season! | 大谷翔平ハイライト" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            if (guess === targetWord) {
+                document.getElementById("message").textContent = "Congratulations! You found the word!";
+            } else if (currentAttempt >= maxAttempts) {
+                document.getElementById("message").textContent = "Game Over! The word was: " + targetWord;
+            }
+        });
 
-        <img src="CIF Champs.jpeg" 
-            style="width: 200px;height: 200px;"> 
+        createGrid();
+    </script>
+</body>
+</html>
+ 
